@@ -237,7 +237,7 @@ if (dado>5) {
 else{
   obj1.innerHTML=`has perdido, salio el numero ${dado}`
 }
-*/
+
 let aux
 let marca,modelo,descuento = 0;
 marca = prompt("Marca?", "0");
@@ -252,3 +252,395 @@ if ((marca=="ford") && (modelo =="focus"))
 descuento = 10;
 }
 document.write(`<h3>Su descuento es ${descuento} </h3>`);
+
+
+function hi(nombre) {
+
+  document.write(`hola ${nombre}`)
+}
+
+
+function calculo(numero=1) {
+  let calculo=numero*numero;
+}
+
+let num=1; let dato;
+
+while (num<10) {
+  dato=prompt('ingrese el numero')
+  num=parseInt(dato)
+document.write(`Numero actual: ${num}`)
+}
+
+document.write('Fin del Programa')
+
+-----------------------------------------09-01-2022
+
+--------------------------------01)
+
+let num=1, dato;
+while (num<10) {
+  dato=prompt('Ingrese un número')
+  num=parseInt(dato);
+  document.write(`El numero ingresado es: ${num}<br>`)
+}
+document.write(`fin del programa, el ultimo numero ingresado es: ${num}`)
+
+--------------------------------02
+
+let edad, final;
+edad=prompt('Ingrese su edad')
+if (isNaN(edad)) {
+  final='el valor es invalido'
+}
+else{
+  final=(edad<18) ?'ud, es menor de edad': 'ud. es mayor de edad';
+}
+document.write(`${final}`)
+
+
+let mes;
+
+mes=prompt('ingrese mes')
+mes=parseInt(mes)
+
+if (mes==1||mes==3||mes==5||mes==7||mes==8||mes==12) {
+  document.write('este mes tiene 31 días')
+}
+
+else if(isNaN(mes)){
+  document.write('este es un valor invalido')
+}
+
+else if (mes>12) {
+  document.write('sorry, but a no valid mes')
+}
+
+else {
+  mes=(mes==2)?'este mes tiene 28 días':'este mes tiene 30 días'
+}
+document.write(`${mes}`)
+
+
+let mes;
+
+mes=prompt('ingrese mes');
+mes=parseInt(mes);
+
+if (mes==1||mes==3||mes==5||mes==8||mes==7||mes==12) {
+  document.write('El mes que ud. escogió, es de 31 días')
+}
+
+else if (mes>12) {
+  document.write('este mes no existe')
+}
+
+else if (isNaN(mes)) {
+  document.write('ingreso valor invalido')
+}
+
+
+else{
+  mes=(mes==2)?'este mes tiene 28 días':'este mes tiene 30 días'
+}
+document.write(`${mes}`)
+
+|--------------------------------------------03)
+let mes;
+mes=prompt('Ingrese mes')
+mes=parseInt(mes)
+
+if (mes==1||mes==3||mes==5||mes==8||mes==12) {
+  document.write(`el mes contiene 31 días`)
+}
+else if (mes>12) {
+  document.write('El mes no existe')
+}
+else if (isNaN(mes)) {
+  document.write('Valor ingresado es invalido')
+}
+else {
+  mes=(mes==2)?'Febrero tiene 28 días':'El mes tiene 30 días'
+}
+document.write(`${mes}`)
+
+//1-3-5-7-8-12
+
+
+let mes;
+mes=prompt('ingrese el mes')
+mes=parseInt(mes)
+
+if (mes==1||mes==3||mes==5||mes==7||mes==8||mes==12) {
+  document.write('este mes tiene 31 días')
+}
+else if (mes>12) {
+  document.write('este mes no existe')
+
+  
+}
+
+else if (mes<=0) {
+  document.write('este mes tampoco existe')
+}
+
+else if (isNaN(mes)) {
+  document.write('el valor ingresado es invalido')
+}
+else{
+  mes=(mes==2)?'Ferbrero tiene 28 días':'el mes tiene 30 dias'
+  document.write(`${mes}`)
+}
+
+
+// function suma(n1,n2) {
+//   return n1+n2;
+// }
+
+-------------------------------------------------------10-01-2022
+----------------------------------------------04)
+
+
+let mult=function(x,y){
+  return x*y
+}
+
+let expon=function(x,y){
+  return Math.pow(x,y);
+}
+
+
+
+let suma=(x,y)=>{return x+y};
+
+var resultado=mult(5,2);
+alert(resultado);
+
+resultado=suma(3,4);
+alert(resultado);
+
+resultado= expon(2,5);
+alert(resultado);
+
+---------------------------------------------05)
+
+let mult=function(x,y) {
+  return x*y
+}
+let expon=function(x,y) {
+  return Math.pow(x,y)
+}
+
+let suma=(x,y)=>{
+  return x+y};
+
+ resultado=mult(5,2);
+alert(resultado)
+
+resultado=suma(3,4);
+alert(resultado)
+
+resultado=expon(2,5);
+alert(resultado);
+
+
+-------------------------------------------------06)
+
+
+
+
+
+x=prompt('ingrese primer valor para multiplicar, sumar y exponer')
+x=parseInt(x)
+
+y=prompt('ingrese segundo valor para multiplicar, sumar y exponer')
+y=parseInt(y)
+
+  mult= function (x,y) {
+  return x*y
+  }
+
+    expon=function (x,y) {
+    return Math.pow(x,y)
+    }
+
+    suma=(x,y)=>{
+    return x+y;
+    }
+
+    resultado=mult(x,y);
+    alert(`El valor de la multiplicacion es: ${resultado}`);
+
+    resultado=suma(x,y);
+    alert(`El valor de la suma es: ${resultado}`);
+
+
+    resultado=expon(x,y);
+    alert(`El valor de la potencia es: ${resultado}`);
+
+
+
+let mes;
+mes=prompt('ingrese el mes')
+mes=parseInt(mes)
+
+if (mes==1||mes==3||mes==5||mes==7||mes==8||mes==12) {
+  document.write('este mes tiene 31 días')
+}
+else if (mes>12) {
+  document.write('este mes no existe')
+
+  
+}
+
+else if (mes<=0) {
+  document.write('este mes tampoco existe')
+}
+
+else if (isNaN(mes)) {
+  document.write('el valor ingresado es invalido')
+}
+else{
+  mes=(mes==2)?'Ferbrero tiene 28 días':'el mes tiene 30 dias'
+  document.write(`${mes}`)
+}
+1-3-5-7-8-12
+
+
+
+
+
+let mes = prompt ("ingrese un numero de 1 al 12 correspondiente al mes", "");
+
+if (mes==1 || mes==3 || mes==5 || mes==7 || mes==8 || mes==10 || mes==12)
+{
+  resultado= "el mes tiene 31 dias"
+}
+
+else if (mes==4 || mes==6 || mes==9 || mes==11)
+{
+  resultado= "el mes tiene 30 dias"  
+}
+
+else if (mes==2)
+{
+  resultado= "el mes tiene 28 dias"
+}
+
+else if (mes==null || mes=="")
+{
+  resultado= "No ha ingresado ningun valor"
+}
+
+else
+{
+  resultado= "el valor es incorrecto"
+}
+
+alert (`${resultado}`);
+
+
+
+
+let mes
+mes=prompt('Ingrese el mes')
+mes=parseInt(mes)
+
+if (mes==1||mes==03||mes==5||mes==7||mes==8||mes==12) {
+  alert('este mes tiene 31 días')
+}
+
+else if (mes<=0) {
+  alert('Este mes no existe')
+}
+else if (mes>12) {
+  alert('Este mes tampoco existe')
+}
+
+
+else if (mes==' ') {
+  alert('Ud no ingreso ningun valor')
+}
+
+else if (isNaN(mes)) {
+  alert('El valor no es valido')
+}
+
+else{
+  mes=(mes==2)?'Este mes es febrero y tiene 28 días':'Este mes tiene 30 días'
+  alert(`${mes}`)
+}
+
+
+let cadena='',i;
+for(i=0;i<5;i++)//donde esta, hasta donde llego, que hago
+{
+cadena=cadena+ `el numero es ${i}<br/>`;
+}
+
+document.getElementById('central').innerHTML=cadena;
+
+
+
+
+let cadena='',i;
+
+for(i=1;i<6;i++)
+{
+  cadena=cadena+`El numeroe es ${i} </br>`
+}
+
+document.getElementById('central').innerHTML=cadena;
+
+*/
+
+let cadena ='';
+for(let i=0;i<6;i++){
+  cadena=cadena+`${i}`
+}
+document.getElementById('central').innerHTML=cadena;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
